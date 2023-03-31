@@ -19,7 +19,7 @@ output
 - `crawler.py`: 爬虫主程序
 - `log/`: 日志模块
 - `README.md`: 项目说明
-- output: 爬取结果（运行时自动创建）
+- `output`: 爬取结果（运行时自动创建）
 
 ## 用法
 
