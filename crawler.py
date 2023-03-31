@@ -8,13 +8,12 @@ import requests
 from log.logger import logger
 
 start_date = '2022-02-01'
-# start_date = '2023-03-28'
 end_date = '2023-03-31'
 
 # 将当前工作目录切换到当前文件所在目录
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-out_path = 'source'
+out_path = 'output'
 filename = 'origin-data.csv'
 
 

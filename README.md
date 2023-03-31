@@ -8,30 +8,28 @@
 
 ```text
 README.md
-crawl.py
-log.py
-requirements.txt
+crawler.py
+log
+  |-- logger.py
+  |-- log.txt
 output
-  |-- ...
+  |-- origin-data.csv
 ```
 
-- crawl.py: 爬虫主程序
-- log.py: 日志模块
-- log.txt: 日志文件
-- requirements.txt: 依赖包
-- README.md: 项目说明
+- `crawler.py`: 爬虫主程序
+- `log/`: 日志模块
+- `README.md`: 项目说明
 - output: 爬取结果（运行时自动创建）
-  - 其中的数据文件以日期命名，如 `2022-02-14.txt`
 
 ## 用法
 
 ### 安装依赖
 
-需要安装的软件包在 `requirements.txt` 中，包括：
+需要安装的软件包包括：
 
 - pandas：数据处理
-- selenium：浏览器自动化
 - colorlog：彩色日志
+- requests：发送请求
 
 ### 修改配置
 
@@ -39,15 +37,15 @@ output
 
 ```python
 start_date = '20220214' # 厦门树洞小程序上线日期
-today = '20230330'
+end_date = '20230330'
 ```
 
 ### 运行
 
-最后运行 `crawl.py` 即可。
+最后运行 `crawler.py` 即可。
 
 ```shell
-python crawl.py
+python crawler.py
 ```
 
 ## 其他
